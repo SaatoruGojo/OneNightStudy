@@ -6,7 +6,6 @@ import { Helmet } from "react-helmet";
 const About = () => {
   return (
     <div style={{ backgroundColor: "#Dbe6ea" }}>
-
       <Helmet>
         <title>About - Bunk4Study</title>
         <meta name="description" content="Know more about Bunk4Study" />
@@ -46,7 +45,7 @@ const About = () => {
               benefits in examinations. Every student pass in exam with good
               marks and he/she don’t spend much time in finding the question
               paper on different sites rather than all can find study materials
-              in Bunk4Study. So all can get benefits in Bunk4Study.
+              in Bunk4Study. So all can get benefits in Bunk4Study Website.
             </p>
             <span class="inline-block h-1 w-10 rounded bg-blue-500 mt-8 mb-6"></span>
           </div>
