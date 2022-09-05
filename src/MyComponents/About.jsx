@@ -45,7 +45,7 @@ const About = () => {
               benefits in examinations. Every student pass in exam with good
               marks and he/she don’t spend much time in finding the question
               paper on different sites rather than all can find study materials
-              in Bunk4Study. So all can get benefits in Bunk4Study Website.
+              in Bunk4Study. So all can get benefits in Bunk4Study.
             </p>
             <span class="inline-block h-1 w-10 rounded bg-blue-500 mt-8 mb-6"></span>
           </div>
