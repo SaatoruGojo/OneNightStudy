@@ -334,7 +334,7 @@ const Home = () => {
                 <div class="carousel-item active bg-white rounded" id="fc">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    fill="#62aec5"
+                    fill = "#62aec5"
                     class="inline-block w-8 h-8 text-gray-400 mb-8"
                     viewBox="0 0 975.036 975.036"
                   >

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { BrowserRouter, Link, Router } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { auth } from "./MyComponents/Authintication/firebase";
 import Signin from "./MyComponents/Authintication/components/Signin";
@@ -316,6 +316,7 @@ function App() {
           <Route path="/Signin" element={<Signin />} />
 
           <Route path="/user" element={<Navigate to="/" />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
 
         <div>
