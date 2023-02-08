@@ -303,12 +303,18 @@
   #fc {
     top: -1rem;
   }
-  #tc{
+  #tc {
     top: 1rem;
   }
   .short-button {
     width: 98px;
     /* font-size: 10px; */
     padding: 10px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    padding: 0 100px;
   }
 }

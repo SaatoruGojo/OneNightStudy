@@ -119,7 +119,7 @@ function NavBar(props) {
                 ></i>
               </NavLink>
             )}
-            {/* 
+            {/*
 
             {props.User ? (
               <NavLink to="Signout" title="Signout" activeClassName="active" className="nav-link me-2">
@@ -154,13 +154,13 @@ function NavBar(props) {
           ></button>
         </div>
         <div class="offcanvas-body">
-          <h6>
+          {/* <h6>
             <Link to={"/Event"}>
               * Go To Event Page For Some Amazing Giveaway
             </Link>
             <span class="badge bg-danger">New</span>
-          </h6>
-          <h6>* Every Month 5 Tshirt Giveaway</h6>
+          </h6> */}
+          {/* <h6>* Every Month 5 Tshirt Giveaway</h6> */}
           <h6>* MDU CSE all semester paper are uploaded</h6>
           <h6>* KU is added</h6>
           <h6>* CDLU is added</h6>

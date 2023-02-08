@@ -6,6 +6,11 @@ import third from "../Images/third.svg";
 import { Link } from "react-router-dom";
 import CountUp from "react-countup";
 import { Helmet } from "react-helmet";
+
+const handleClick = () => {
+  alert("Giveaway Will Start Soon");
+};
+
 const Home = () => {
   return (
     <>
@@ -30,13 +35,14 @@ const Home = () => {
                   How Are You!!
                   <strong className="brand-name"> Bunkian </strong>
                   <div className="gift-container">
-                    <Link to={"/Event"}>
-                      <img
-                        src="https://i.imgur.com/QhuCNop.png"
-                        alt=""
-                        className="gift"
-                      />
-                    </Link>
+                    {/* <Link onClick={handleClick}> */}
+                    <img
+                      src="https://i.imgur.com/QhuCNop.png"
+                      alt=""
+                      className="gift"
+                      onClick={handleClick}
+                    />
+                    {/* </Link> */}
                   </div>
                 </h1>
 
@@ -134,7 +140,7 @@ const Home = () => {
                           </svg>
                           <h2 class="title-font font-medium text-3xl text-gray-900">
                             <CountUp
-                              end={1200}
+                              end={250}
                               duration={5}
                               style={{ color: "white" }}
                             />
@@ -166,7 +172,7 @@ const Home = () => {
                           </svg>
                           <h2 class="title-font font-medium text-3xl text-gray-900">
                             <CountUp
-                              end={500}
+                              end={50}
                               duration={5}
                               style={{ color: "white" }}
                             />
@@ -334,7 +340,7 @@ const Home = () => {
                 <div class="carousel-item active bg-white rounded" id="fc">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    fill = "#62aec5"
+                    fill="#62aec5"
                     class="inline-block w-8 h-8 text-gray-400 mb-8"
                     viewBox="0 0 975.036 975.036"
                   >
