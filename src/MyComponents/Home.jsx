@@ -7,10 +7,6 @@ import { Link } from "react-router-dom";
 import CountUp from "react-countup";
 import { Helmet } from "react-helmet";
 
-const handleClick = () => {
-  alert("Giveaway Will Start Soon");
-};
-
 const Home = () => {
   return (
     <>
@@ -21,48 +17,52 @@ const Home = () => {
       <section id="header" class="container-fluid">
         <div className="container-fluid nav_bg">
           <Helmet>
-            <title>Home - Bunk4Study</title>
+            <title>Home - One Night Study</title>
             <meta
               name="description"
-              content="qusetion bank for mdu and other universities"
+              content="MDU University Question Paper, Previous Year Paper"
             />
           </Helmet>
 
           <div className="row">
             <div className="col-10 mx-auto">
               <div className="col-md-40 pt-5 pt-lg-0 order-2 order-lg-1">
-                <h1 className="bunk-heading">
-                  How Are You!!
-                  <strong className="brand-name"> Bunkian </strong>
-                  <div className="gift-container">
-                    {/* <Link onClick={handleClick}> */}
-                    <img
-                      src="https://i.imgur.com/QhuCNop.png"
-                      alt=""
-                      className="gift"
-                      onClick={handleClick}
-                    />
-                    {/* </Link> */}
-                  </div>
+                <h2 className="bunk-heading ">
+                  <strong className="brand-name"> </strong>
+                </h2>
+                <h1 className="bunk-heading ">
+                  <strong className="brand-name"> </strong>
                 </h1>
 
                 <div className="MDU">
-                  Question Bank &nbsp;
-                  <div class="spinner-grow text-danger" role="status">
-                    <span class="visually-hidden">Loading...</span>
-                  </div>
-                  <div className="branches-name">
+                  Previous Year Question Paper &nbsp;
+                  <h1 className="bunk-heading ">
+                    <strong className="brand-name"> </strong>
+                  </h1>
+                  <div className="branches-name ">
                     <Link to={"/MDU"}>
-                      <button
-                        type="button"
-                        class="btn btn-primary short-button"
-                        title="Computer Science Engineering"
-                      >
+                      <button class="button-63 short-button " role="button">
                         MDU
                       </button>
                     </Link>
+                    <Link to={"/DCRU"}>
+                      <button class="button-63 short-button" role="button">
+                        DCRUST
+                      </button>
+                    </Link>
+                    <Link to={"/JCBU"}>
+                      <button class="button-63 short-button" role="button">
+                        JCBU
+                      </button>
+                    </Link>
+                    <Link to={"/Question"}>
+                      <button class="button-63 short-button" role="button">
+                        OTHER
+                      </button>
+                    </Link>
 
-                    <Link to={"/CDLU"}>
+                    {/* Temporary Close */}
+                    {/* <Link to={"/CDLU"}>
                       <button
                         type="button"
                         class="btn btn-primary short-button"
@@ -70,19 +70,9 @@ const Home = () => {
                       >
                         CDLU
                       </button>
-                    </Link>
+                    </Link> */}
 
-                    <Link to={"/DCRU"}>
-                      <button
-                        type="button"
-                        class="btn btn-primary short-button"
-                        title="Mechanical Engineering"
-                      >
-                        DCRU
-                      </button>
-                    </Link>
-
-                    <Link to={"/GJU"}>
+                    {/* <Link to={"/GJU"}>
                       <button
                         type="button"
                         class="btn btn-primary short-button"
@@ -90,31 +80,21 @@ const Home = () => {
                       >
                         GJU
                       </button>
-                    </Link>
-
-                    <Link to={"/JCBU"}>
-                      <button
-                        type="button"
-                        class="btn btn-primary short-button"
-                        title="Civil Engineering"
-                      >
-                        JCBU
-                      </button>
-                    </Link>
-
-                    <Link to={"/Question"}>
-                      <button
-                        type="button"
-                        class="btn btn-primary short-button"
-                        title="Click here to visit the QUESTIONS page"
-                      >
-                        Others
-                      </button>
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
+                <h1 className="bunk-heading ">
+                  <strong className="brand-name"></strong>
+                </h1>
 
-                <section class="text-gray-600 body-font">
+                <h1 className="bunk-heading ">
+                  <strong className="brand-name"></strong>
+                </h1>
+                <h1 className="bunk-heading ">
+                  <strong className="brand-name"></strong>
+                </h1>
+                {/* <section class="text-gray-600 body-font">
+                  
                   <div class="container px-5 py-24 mx-auto">
                     <div class="flex flex-wrap -m-4 text-center">
                       <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
@@ -242,14 +222,13 @@ const Home = () => {
                       </div>
                     </div>
                   </div>
-                </section>
+                </section> */}
               </div>
             </div>
           </div>
         </div>
       </section>
-      {/* Utkarsh Code Start */}
-      <section class="text-gray-600 body-font">
+      {/* <section id="header1">
         <div class="container-fluid">
           <div
             id="first"
@@ -306,15 +285,15 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
-      {/* Utkarsh Code Ends for those 3 divs  */}
+      </section> */}
+
       <section
         class="text-gray-600 body-font"
-        style={{ backgroundColor: "#Dbe6ea" }}
+        style={{ backgroundColor: "#ffffff" }}
       >
         <div class="container px-5 py-24 mx-auto">
           <div id="demo" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
+            {/* <div class="carousel-indicators">
               <button
                 type="button"
                 id="arrow"
@@ -334,90 +313,42 @@ const Home = () => {
                 data-bs-target="#demo"
                 data-bs-slide-to="2"
               ></button>
-            </div>
+            </div> */}
             <div class="carousel-inner">
               <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
                 <div class="carousel-item active bg-white rounded" id="fc">
-                  <svg
+                  {/* <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="#62aec5"
                     class="inline-block w-8 h-8 text-gray-400 mb-8"
                     viewBox="0 0 975.036 975.036"
                   >
                     <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
-                  </svg>
+                  </svg> */}
                   <p class="leading-relaxed text-lg">
-                    “I just wanted to share a quick note and let you know that
-                    you guys do a really good job. I’m glad I decided to visit
-                    this site before my exam. It’s really great how easy your
-                    websites to find and download question paper. I never have
-                    any problem at all. Now it’s almost like having a mentor
-                    right here with me. I just choose the page, choose the
-                    branch then year and click download. It’s so simple. Thanks,
-                    guys!”
+                    <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm sup">
+                      Avail an array of complimentary educational materials:
+                    </h2>
+                    Access unrestricted study notes, past question papers,
+                    lecture recordings, and a multitude of other valuable
+                    resources, all at no cost! <br />
+                    <br />
+                    <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm sup">
+                      Unleash the excellence:
+                    </h2>{" "}
+                    Seek assistance if you can't locate your Question Paper, and
+                    your peers will joyfully lend a hand.
+                    <br />
+                    <br />
+                    <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm sup">
+                      Authentic:
+                    </h2>{" "}
+                    All records have been submitted by fellow students from your
+                    department.
                   </p>
-                  <span
-                    id="blue-line"
-                    class="inline-block h-1 w-10 rounded bg-blue-500 mt-8 mb-6"
-                  ></span>
-                  <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm sup">
-                    Ritik Singh
-                  </h2>
-                  <p class="text-gray-500 sub">College Student</p>
                 </div>
 
-                <div class="carousel-item bg-white rounded" id="sc">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="#62aec5"
-                    class="inline-block w-8 h-8 text-gray-400 mb-8"
-                    viewBox="0 0 975.036 975.036"
-                  >
-                    <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
-                  </svg>
-                  <p class="leading-relaxed text-lg">
-                    "I must say I am very impressed after visit to the
-                    Bunk4Study website. The website is well presented , easy to
-                    follow and engaging. I thoroughly enjoyed this website and
-                    helps me a lot in exams by downloading question papers and
-                    study materials. Thank you ! This is the Best Website !"
-                  </p>
-                  <span
-                    id="blue-line"
-                    class="inline-block h-1 w-10 rounded bg-blue-500 mt-8 mb-6"
-                  ></span>
-                  <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm sup">
-                    Rohan
-                  </h2>
-                  <p class="text-gray-500 sub">College Student</p>
-                </div>
-
-                <div class="carousel-item bg-white rounded" id="tc">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="#62aec5"
-                    class="inline-block w-8 h-8 text-gray-400 mb-8"
-                    viewBox="0 0 975.036 975.036"
-                  >
-                    <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
-                  </svg>
-                  <p class="leading-relaxed text-lg">
-                    “For students , Bunk4Study is very helpful and well
-                    organized and easy for all the students to search. This
-                    website is very helpful , supportive throughout in my
-                    college exams. All team members really done a very good job.
-                    It is easy for me to search content through only website
-                    i.e. Bunk4Study. Thank you so much !”
-                  </p>
-                  <span
-                    id="blue-line"
-                    class="inline-block h-1 w-10 rounded bg-blue-500 mt-8 mb-6"
-                  ></span>
-                  <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm sup">
-                    Priya
-                  </h2>
-                  <p class="text-gray-500 mb-4 sub">College Student</p>
-                </div>
+                
               </div>
             </div>
           </div>

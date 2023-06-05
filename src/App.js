@@ -12,7 +12,6 @@ import Home from "./MyComponents/Home";
 import About from "./MyComponents/About";
 import Blog from "./MyComponents/Blog";
 import ContactUs from "./MyComponents/ContactUs";
-import Credits from "./MyComponents/Credits";
 import Notes from "./MyComponents/Notes";
 import Upload from "./MyComponents/Upload";
 import Privacy from "./MyComponents/Privacy";
@@ -216,7 +215,6 @@ function App() {
           <Route path="/Q12" element={<Q12 />} />
           <Route path="/Q13" element={<Q13 />} />
           <Route path="/ContactUs" element={<ContactUs />} />
-          <Route path="/Credits" element={<Credits />} />
           <Route path="/Event" element={<Event />} />
           <Route path="/CseSem1MDU" element={<CseSem1MDU />} />
           <Route path="/CseSem2MDU" element={<CseSem2MDU />} />

@@ -26,7 +26,7 @@ function NavBar(props) {
               height="200"
               className="d-inline-block align-text-top"
             />
-            Bunk4Study
+            One Night Study
           </NavLink>
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
@@ -85,14 +85,14 @@ function NavBar(props) {
                 Contact Us
               </NavLink>
             </li>
-            <i
+            {/* <i
               id="bell"
               className="bi bi-bell-fill text-dark me-3 fs-2 mx-4 d-inline-block align-text-top"
               onClick={handleClick}
               data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasRight"
               aria-controls="offcanvasRight"
-            ></i>
+            ></i> */}
 
             {handleClick.User || props.User ? (
               <NavLink
@@ -137,7 +137,7 @@ function NavBar(props) {
           </div>
         </div>
       </nav>
-      <div
+      {/* <div
         class="offcanvas offcanvas-end"
         tabindex="-1"
         id="offcanvasRight"
@@ -153,14 +153,15 @@ function NavBar(props) {
             aria-label="Close"
           ></button>
         </div>
+        
         <div class="offcanvas-body">
-          {/* <h6>
+          <h6>
             <Link to={"/Event"}>
               * Go To Event Page For Some Amazing Giveaway
             </Link>
             <span class="badge bg-danger">New</span>
-          </h6> */}
-          {/* <h6>* Every Month 5 Tshirt Giveaway</h6> */}
+          </h6>
+          <h6>* Every Month 5 Tshirt Giveaway</h6>
           <h6>* MDU CSE all semester paper are uploaded</h6>
           <h6>* KU is added</h6>
           <h6>* CDLU is added</h6>
@@ -172,7 +173,7 @@ function NavBar(props) {
             <Link to={"/upload"}>"Click Here"</Link>
           </h6>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
