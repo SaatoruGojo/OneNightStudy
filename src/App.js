@@ -1,35 +1,17 @@
 import { BrowserRouter, Link, Router } from "react-router-dom";
 import React, { useState, useEffect } from "react";
-import { auth } from "./MyComponents/Authintication/firebase";
-import Signin from "./MyComponents/Authintication/components/Signin";
-import Signup from "./MyComponents/Authintication/components/Signup";
-import Signout from "./MyComponents/Authintication/Signout";
 import "./App.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
-import Header from "./MyComponents/Header";
+import Navbar from "./MyComponents/Navbar";
 import Home from "./MyComponents/Home";
 import About from "./MyComponents/About";
-import Blog from "./MyComponents/Blog";
+
 import ContactUs from "./MyComponents/ContactUs";
 import Notes from "./MyComponents/Notes";
 import Upload from "./MyComponents/Upload";
 import Privacy from "./MyComponents/Privacy";
-import Faq from "./MyComponents/Faq";
-import Giveaway from "./MyComponents/Giveaway/Giveaway";
-import Q1 from "./MyComponents/Giveaway/Q1";
-import Q2 from "./MyComponents/Giveaway/Q2";
-import Q3 from "./MyComponents/Giveaway/Q3";
-import Q4 from "./MyComponents/Giveaway/Q4";
-import Q5 from "./MyComponents/Giveaway/Q5";
-import Q6 from "./MyComponents/Giveaway/Q6";
-import Q7 from "./MyComponents/Giveaway/Q7";
-import Q8 from "./MyComponents/Giveaway/Q8";
-import Q9 from "./MyComponents/Giveaway/Q9";
-import Q10 from "./MyComponents/Giveaway/Q10";
-import Q11 from "./MyComponents/Giveaway/Q11";
-import Q12 from "./MyComponents/Giveaway/Q12";
-import Q13 from "./MyComponents/Giveaway/Q13";
+
 import Question from "./MyComponents/Question";
 import MDU from "./MyComponents/College/MDU";
 import JCBU from "./MyComponents/College/JCBU";
@@ -44,7 +26,7 @@ import GJUN from "./MyComponents/College/GJUN";
 import CDLUN from "./MyComponents/College/CDLUN";
 import KUN from "./MyComponents/College/KUN";
 import Footer from "./MyComponents/Footer";
-import Event from "./MyComponents/Event";
+
 import CseBranchMDU from "./MyComponents/Branch/MDU/CseMDU/CseBranchMDU";
 import EceBranchMDU from "./MyComponents/Branch/MDU/EceMDU/EceBranchMDU";
 import MeBranchMDU from "./MyComponents/Branch/MDU/MeMDU/MeBranchMDU";
@@ -137,29 +119,13 @@ import MeBranchKUN from "./MyComponents/Notes/KUN/MeKUN/MeBranchKUN";
 import EceBranchKUN from "./MyComponents/Notes/KUN/EceKUN/EceBranchKUN";
 import EeBranchKUN from "./MyComponents/Notes/KUN/EeKUN/EeBranchKUN";
 
-import ScrollToTop from "./MyComponents/scrollToTop";
 import { Routes, Route, Navigate } from "react-router-dom";
 import CookieConsent from "react-cookie-consent";
 import { Helmet } from "react-helmet";
+import ComingSoon from './MyComponents/ComingSoon';
 
 function App() {
   const [user, setUser] = useState(null);
-
-  useEffect(() => {
-    const unsubscribe = auth.onAuthStateChanged((userAuth) => {
-      const user = {
-        uid: userAuth?.uid,
-        email: userAuth?.email,
-      };
-      if (userAuth) {
-        console.log(userAuth);
-        setUser(user);
-      } else {
-        setUser(null);
-      }
-    });
-    return unsubscribe;
-  }, []);
 
   return (
     <>
@@ -168,21 +134,25 @@ function App() {
           backgroundColor: "white",
         }}
       >
-        <ScrollToTop />
-        <Header User={user} />
+        <Navbar User={user} />
 
         <Helmet>
-          <title>Bunk4Study</title>
-          <meta name="description"
+          <title>OneNightStudy</title>
+          <meta
+            name="description"
             content="Get all the question papers of mdu,cdlu,dcru,gju,jcbu and other universities"
           />
-          <meta name="keywords" content="bunk4study,college prepration,university exam,MDU question paper,JCBU question paper,DCRU question paper,Notes,papers of university" />
+          <meta
+            name="keywords"
+            content="OneNightStudy,college prepration,university exam,MDU question paper,JCBU question paper,DCRU question paper,Notes,papers of university"
+          />
         </Helmet>
 
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
-          <Route path="/Blog" element={<Blog />} />
+          <Route path="/coming-soon" element={<ComingSoon />} />
+
           <Route path="/Question" element={<Question />} />
           <Route path="/MDU" element={<MDU />} />
           <Route path="/JCBU" element={<JCBU />} />
@@ -196,26 +166,12 @@ function App() {
           <Route path="/GJUN" element={<GJUN />} />
           <Route path="/CDLUN" element={<CDLUN />} />
           <Route path="/KUN" element={<KUN />} />
-          <Route path="/Notes" element={<Notes />} />
+          {/* <Route path="/Notes" element={<Notes />} /> */}
           <Route path="/Upload" element={<Upload />} />
           <Route path="/Privacy" element={<Privacy />} />
-          <Route path="/Faq" element={<Faq />} />
-          <Route path="/Giveaway" element={<Giveaway />} />
-          <Route path="/Q1" element={<Q1 />} />
-          <Route path="/Q2" element={<Q2 />} />
-          <Route path="/Q3" element={<Q3 />} />
-          <Route path="/Q4" element={<Q4 />} />
-          <Route path="/Q5" element={<Q5 />} />
-          <Route path="/Q6" element={<Q6 />} />
-          <Route path="/Q7" element={<Q7 />} />
-          <Route path="/Q8" element={<Q8 />} />
-          <Route path="/Q9" element={<Q9 />} />
-          <Route path="/Q10" element={<Q10 />} />
-          <Route path="/Q11" element={<Q11 />} />
-          <Route path="/Q12" element={<Q12 />} />
-          <Route path="/Q13" element={<Q13 />} />
+
           <Route path="/ContactUs" element={<ContactUs />} />
-          <Route path="/Event" element={<Event />} />
+
           <Route path="/CseSem1MDU" element={<CseSem1MDU />} />
           <Route path="/CseSem2MDU" element={<CseSem2MDU />} />
           <Route path="/CseSem3MDU" element={<CseSem3MDU />} />
@@ -308,10 +264,7 @@ function App() {
           <Route path="/EceBranchKUN" element={<EceBranchKUN />} />
           <Route path="/EeBranchKUN" element={<EeBranchKUN />} />
 
-
-          <Route path="/Signup" element={<Signup />} />
-          <Route path="/Signout" element={<Signout User={user} />} />
-          <Route path="/Signin" element={<Signin />} />
+    
 
           <Route path="/user" element={<Navigate to="/" />} />
           <Route path="*" element={<Navigate to="/" />} />
@@ -320,16 +273,6 @@ function App() {
         <div>
           <Footer />
         </div>
-        {/* <CookieConsent
-          debug={true}
-          buttonStyle={{ borderRadius: "5px" }}
-          buttonText="GOT IT"
-        >
-          🍪We use cookies to ensure you get the best experience on our website.{" "}
-          <Link to={"/privacy"} style={{ "text-decoration": "underline" }}>
-            Cookies Policy
-          </Link>
-        </CookieConsent> */}
       </div>
     </>
   );

@@ -1,5 +1,5 @@
 #header {
-  background: url(https://i.imgur.com/OcAPV9V.png);
+  background: linear-gradient(to bottom right, #FF9BCA, #FFD3A5, #FFEAC8);
   background-position: center;
   background-size: cover;
 }
@@ -8,6 +8,12 @@
   background-position: center;
   background-size: cover;
 }
+
+#demo {
+  background: linear-gradient(to bottom left, #FF9BCA, #FFD3A5, #FFEAC8);
+  
+}
+
 
 .container-fluid {
   width: 100%;
@@ -27,40 +33,17 @@
   left: 1.9rem;
 }
 
-#first {
-  background: linear-gradient(rgba(23 78 98 / 70%), rgba(255, 255, 255, 0.1));
-  margin-bottom: 0rem;
-  text-align-last: left;
-  padding: 2.5rem;
-  position: relative;
-  margin-top: 5rem;
-  border-radius: 0 0 10px 10px;
-  width: 100%;
-}
+
 
 .custom-section {
-  background-color: #f2f2f2; /* Set your desired background color */
+  background: linear-gradient(to bottom right, #FF9BCA, #FFD3A5, #FFEAC8);
   border-radius: 20px; /* Adjust the border radius to create curved corners */
   padding: 20px; /* Add desired padding */
 }
 
-#second {
-  background: linear-gradient(rgba(23 78 98 / 70%), rgba(255, 255, 255, 0.1));
-  margin-bottom: 0rem;
-  text-align-last: left;
-  padding: 2.5rem;
-  border-radius: 10px;
-  width: 100%;
-}
 
-#third {
-  background: linear-gradient(rgba(23 78 98 / 70%), rgba(255, 255, 255, 0.1));
-  padding: 2.5rem;
-  text-align-last: left;
-  border-radius: 10px;
-  width: 100%;
-  margin-bottom: 4rem;
-}
+
+
 
 .carousel-inner {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -114,22 +97,8 @@
 .sub {
   font-size: 16px;
 }
-.gift-container .gift {
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-}
-.gift {
-  float: right;
-  max-width: 10%;
-}
-.gift-container :hover .gift {
-  opacity: 0.6;
-  border: 2px solid black;
-  background-color: #9d989e;
-}
+
+
 .carousel-indicators #arrow {
   background: #111;
   height: 0.1rem;
@@ -361,3 +330,45 @@
     min-width: 196px;
   }
 }
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.box {
+  flex-basis: calc(33.33% - 40px);
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateZ(0);
+  transition: transform 0.3s ease;
+  border-radius: 50px; /* Adjust the value to control the roundness of the corners */
+}
+
+
+.box:hover {
+  transform: translateZ(10px);
+}
+
+
+@media (min-width: 768px) {
+  .box {
+    flex-basis: calc(50% - 40px);
+    margin-right: 20px;
+  }
+
+  .box:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .box {
+    flex-basis: calc(33.33% - 40px);
+  }
+}
+

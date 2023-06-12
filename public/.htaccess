@@ -1,0 +1,26 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Enable Expires headers for caching
+  ExpiresActive On
+  ExpiresDefault "access plus 1 month"
+
+  # Set caching headers for images
+  <FilesMatch "\.(jpg|jpeg|png|gif|svg)$">
+      ExpiresDefault "access plus 1 year"
+      Header set Cache-Control "public"
+  </FilesMatch>
+
+  # Set caching headers for CSS and JS files
+  <FilesMatch "\.(css|js)$">
+      ExpiresDefault "access plus 1 month"
+      Header set Cache-Control "public"
+  </FilesMatch>
+
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteRule . /index.html [L]
+</IfModule>

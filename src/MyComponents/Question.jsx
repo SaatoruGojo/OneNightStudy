@@ -17,9 +17,7 @@ const Question = () => {
 
         <h1 className="question-heading">
           <b>Select Your College</b>
-          <div className="spinner-grow text-primary" role="status">
-            <span className="visually-hidden">Loading...</span>
-          </div>
+        
         </h1>
         <div className="branch-container">
           <Link to={"/MDU"}>
@@ -28,38 +26,48 @@ const Question = () => {
             </button>
           </Link>
 
-          <Link to={"/DCRU"}>
+          <Link to={"/coming-soon"}>
             <button type="button" className="btn">
               Deenbandhu Chhotu Ram University
             </button>
           </Link>
 
-          <Link to={"/GJU"}>
+          <Link to={"/coming-soon"}>
             <button type="button" className="btn">
               Guru Jambheshwar University
             </button>
           </Link>
-          <Link to={"/JCBU"}>
+          <Link to={"/coming-soon"}>
             <button type="button" className="btn">
               J.C. Bose University
             </button>
           </Link>
 
-          <Link to={"/CDLU"}>
+          <Link to={"/coming-soon"}>
             <button type="button" className="btn">
               Chaudhary Devi Lal University
             </button>
           </Link>
 
-          <Link to={"/KU"}>
+          <Link to={"/coming-soon"}>
             <button type="button" className="btn">
               Kurukshetra University
             </button>
           </Link>
+          <br/>
+        
         </div>
       </div>
+   
+
+
+    
+
+   
       <footer className="footer">
-        <p>&copy; 2023 Bunk4Study. All rights reserved.</p>
+        <h3>Latest Update</h3>
+        <p>Right Now Only MDU Paper are Available</p>
+        <p>Click On your college to contribute On website</p>
       </footer>
     </div>
   );

@@ -5,51 +5,71 @@ import "../MyComponents/style/Notes.css";
 
 const Notes = () => {
   return (
-    <div style={{ backgroundColor: "#Dbe6ea" }}>
-      <Helmet>
-        <title>Notes - Bunk4Study</title>
-        <meta name="description" content="Notes and papers related to college and university exam prepration" />
-      </Helmet>
-      <h1>All Notes and Papers are Here!!!</h1>
-      <Link to={"/upload"}>
-        <button className="btn btn-info my-4">Upload Notes and Papers</button>
-      </Link>
-      <div className="Branch">
-        <Link to={"/MDUN"}>
-          <button type="button" class="btn btn-outline-secondary">
-            Maharshi Dayanand University
-          </button>
-        </Link>
+    <div className="wrapper">
+      <div className="question-container">
+        <Helmet>
+          <title>Select Your College - Bunk4Study</title>
+          <meta
+            name="description"
+            content="Question paper related to college exams"
+          />
+        </Helmet>
 
-        <Link to={"/DCRUN"}>
-          <button type="button" class="btn btn-outline-secondary">
-            Deenbandhu Chhotu Ram University
-          </button>
-        </Link>
+        <h1 className="question-heading">
+          <b>Notes</b>
+        
+        </h1>
+        <div className="branch-container">
+        <Link to={"/JCBU"}>
+            <button type="button" className="btn">
+              J.C. Bose University
+            </button>
+          </Link>
 
-        <Link to={"/GJUN"}>
-          <button type="button" class="btn btn-outline-secondary">
-            Guru Jambheshwar University
-          </button>
-        </Link>
-        <Link to={"/JCBUN"}>
-          <button type="button" class="btn btn-outline-secondary">
-            J.C. Bose University
-          </button>
-        </Link>
+          <Link to={"/KU"}>
+            <button type="button" className="btn">
+              Kurukshetra University
+            </button>
+          </Link>
+          <Link to={"/MDU"}>
+            <button type="button" className="btn">
+              Maharshi Dayanand University
+            </button>
+          </Link>
 
-        <Link to={"/CDLUN"}>
-          <button type="button" class="btn btn-outline-secondary">
-            Chaudhary Devi Lal University
-          </button>
-        </Link>
+          <Link to={"/GJU"}>
+            <button type="button" className="btn">
+              Guru Jambheshwar University
+            </button>
+          </Link>
 
-        <Link to={"/KUN"}>
-          <button type="button" class="btn btn-outline-secondary">
-            Kurukshetra University
-          </button>
-        </Link>
+          <Link to={"/CDLU"}>
+            <button type="button" className="btn">
+              Chaudhary Devi Lal University
+            </button>
+          </Link>
+
+          <Link to={"/DCRU"}>
+            <button type="button" className="btn">
+              Deenbandhu Chhotu Ram University
+            </button>
+          </Link>
+
+          <br/>
+          <h1>
+            
+          </h1>
+        </div>
       </div>
+   
+
+
+    
+
+   
+      {/* <footer className="footer">
+        <p>&copy; 2023 Bunk4Study. All rights reserved.</p>
+      </footer> */}
     </div>
   );
 };

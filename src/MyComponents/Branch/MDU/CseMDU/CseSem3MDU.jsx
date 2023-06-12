@@ -1,216 +1,224 @@
 import React from "react";
-
+import { Helmet } from "react-helmet";
+import "../../Style/Branch.css";
 const CseSem3MDU = () => {
   return (
     <>
-      <div style={{ backgroundColor: "#Dbe6ea" }}>
-        <h1 class="mb-1">
-          SEMESTER 3 <br />
-          Select Your Subject
-          <div class="spinner-grow text-primary" role="status">
-            <span class="visually-hidden">Loading...</span>
-          </div>
-        </h1>
-      </div>
-      <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button
-              class="accordion-button"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseOne"
-              aria-expanded="true"
-              aria-controls="collapseOne"
-            >
-              DBMS
-            </button>
-          </h2>
-          <div
-            id="collapseOne"
-            class="accordion-collapse collapse show"
-            aria-labelledby="headingOne"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body" id="sub">
-              <a
-                href="https://drive.google.com/file/d/1uWM134ekaSHUlK-wwSrWtx_hCT55AsvW/view?usp=sharing"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <button type="button" class="btn btn-primary">
-                  2021
+      <div className="wrapper">
+        <div className="branch-container">
+          <Helmet>
+            <title>CseBranchMDU</title>
+            <meta
+              name="description"
+              content="MDU's CSE's Semester-wise Papers"
+            />
+          </Helmet>
+          <h1 className="branch-heading">SEMESTER 3</h1>
+        </div>
+        <div className="branch-container">
+          <div className="accordion" id="accordionExample">
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headingOne">
+                <button
+                  className="accordion-button"
+                  type="button"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  DBMS
                 </button>
-              </a>
-              <br />
+              </h2>
+
+              <div
+                className="accordion-collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div className="accordion-body" id="sub">
+                  <div className="button-container">
+                    <a
+                      href="https://shrinke.me/cse_sem3_dbms"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <button type="button" className="btn btn-primary">
+                        2021
+                      </button>
+                    </a>
+
+                  
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo"
-              aria-expanded="false"
-              aria-controls="collapseTwo"
-            >
-              DSA
-            </button>
-          </h2>
-          <div
-            id="collapseTwo"
-            class="accordion-collapse collapse"
-            aria-labelledby="headingTwo"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body" id="sub">
-              <a
-                href="https://drive.google.com/file/d/1vVZNEjt_B_pcJ7eqRdmJWHfq1jspgkxF/view?usp=sharing"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <button type="button" class="btn btn-primary">
-                  2021
+          <div className="accordion" id="accordionExample">
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headingOne">
+                <button
+                  className="accordion-button"
+                  type="button"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  DE
                 </button>
-              </a>
-              <br />
-              
+              </h2>
+              <div
+                className="accordion-collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div className="accordion-body" id="sub">
+                  <div className="button-container">
+                    <a
+                      href="https://shrinke.me/cse_sem3_de"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <button type="button" className="btn btn-primary">
+                        2021
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseThree"
-              aria-expanded="false"
-              aria-controls="collapseThree"
-            >
-              DE
-            </button>
-          </h2>
-          <div
-            id="collapseThree"
-            class="accordion-collapse collapse"
-            aria-labelledby="headingThree"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body" id="sub">
-              <a
-                href="https://drive.google.com/file/d/1xqGFtCplNeKMCjH4vf_oKI3LHEm2IAY2/view?usp=sharing"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <button type="button" class="btn btn-primary">
-                  2021
+
+          <div className="accordion" id="accordionExample">
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headingOne">
+                <button
+                  className="accordion-button"
+                  type="button"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  DSA
                 </button>
-              </a>
-              <br />
-              
-              <br />
+              </h2>
+              <div
+                className="accordion-collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div className="accordion-body" id="sub">
+                  <div className="button-container">
+                    <a
+                      href="https://shrinke.me/cse_sem3_dsa"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <button type="button" className="btn btn-primary">
+                        2021
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingFour">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseFour"
-              aria-expanded="false"
-              aria-controls="collapseFour"
-            >
-              Python
-            </button>
-          </h2>
-          <div
-            id="collapseFour"
-            class="accordion-collapse collapse"
-            aria-labelledby="headingFour"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body" id="sub">
-              <a
-                href="https://drive.google.com/file/d/1uMnzCw2zLS1bcwh-mt4aIl9LUtxdgyUf/view?usp=sharing"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <button type="button" class="btn btn-primary">
-                  2021
+
+          <div className="accordion" id="accordionExample">
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headingOne">
+                <button
+                  className="accordion-button"
+                  type="button"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Eco
                 </button>
-              </a>
-              <br />
+              </h2>
+              <div
+                className="accordion-collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div className="accordion-body" id="sub">
+                  <div className="button-container">
+                    <a
+                      href="https://shrinke.me/cse_sem3_eco"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <button type="button" className="btn btn-primary">
+                        2021
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingFive">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseFive"
-              aria-expanded="false"
-              aria-controls="collapseFive"
-            >
-              Math
-            </button>
-          </h2>
-          <div
-            id="collapseFive"
-            class="accordion-collapse collapse"
-            aria-labelledby="headingFive"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body" id="sub">
-              <a
-                href="https://drive.google.com/file/d/155llctnyjbsVygJ8Q_aXNU_9eeKTC-vI/view?usp=sharing"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <button type="button" class="btn btn-primary">
-                  2021
+
+          <div className="accordion" id="accordionExample">
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headingOne">
+                <button
+                  className="accordion-button"
+                  type="button"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  MATH III
                 </button>
-              </a>
-              <br />
+              </h2>
+              <div
+                className="accordion-collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div className="accordion-body" id="sub">
+                  <div className="button-container">
+                    <a
+                      href="https://shrinke.me/cse_sem3_math"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <button type="button" className="btn btn-primary">
+                        2021
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingSix">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseSix"
-              aria-expanded="false"
-              aria-controls="collapseSix"
-            >
-              Digital Analog Communication
-            </button>
-          </h2>
-          <div
-            id="collapseSix"
-            class="accordion-collapse collapse"
-            aria-labelledby="headingSix"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body" id="sub">
-              <a
-                href="https://drive.google.com/file/d/16qXXMvnPqTIDiTX3vaNyzK-NQustWC__/view?usp=sharing"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <button type="button" class="btn btn-primary">
-                  2021
+
+          <div className="accordion" id="accordionExample">
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headingOne">
+                <button
+                  className="accordion-button"
+                  type="button"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  PYTHON
                 </button>
-              </a>
-              <br />
+              </h2>
+              <div
+                className="accordion-collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div className="accordion-body" id="sub">
+                  <div className="button-container">
+                    <a
+                      href="https://shrinke.me/cse_sem3_python"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <button type="button" className="btn btn-primary">
+                        2021
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

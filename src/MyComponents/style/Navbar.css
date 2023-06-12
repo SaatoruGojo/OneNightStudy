@@ -8,6 +8,13 @@
   top: 0;
   z-index: 20;
 }
+
+.navbar-logo {
+  width: 80%; /* Adjust the width as needed */
+  height: auto; /* Adjust the height as needed or remove this line */
+}
+
+
 h6{
   text-align: left;
   padding: 5px;
@@ -63,7 +70,7 @@ ul {
 
 .nav-item {
   line-height: 40px;
-  margin-right: 1rem;
+  margin-right: 2rem;
 }
 
 .nav-item:after {
@@ -131,14 +138,11 @@ ul {
     color: #111;
   }
 
-  #bell {
-    position: relative;
-    left: -2rem;
-  }
+
 
   #userlog {
     position: relative;
-    left: 2rem;
-    top: -3.2rem;
+    left: 0rem;
+    top: -1.7rem;
   }
 }
