@@ -15,9 +15,7 @@ OneNightStudy is a one-stop solution for students seeking effortless access to a
 
 Visit the website: [OneNightStudy](https://onenightstudy.rf.gd/)
 
-Connect with us on social media:
-- Twitter: [@OneNightStudy](https://twitter.com/OneNightStudy)
-- Instagram: [@onenightstudy_official](https://www.instagram.com/_onenightstudy/)
+
 
 ## Our Vision
 
@@ -51,6 +49,9 @@ Help us reach more students by sharing **OneNightStudy** with your friends and c
 
 
 Join us in shaping the future of education! 🌟
+Connect with us on social media:
+- Twitter: [@OneNightStudy](https://twitter.com/OneNightStudy)
+- Instagram: [@onenightstudy_official](https://www.instagram.com/_onenightstudy/)
 
 ---
 
