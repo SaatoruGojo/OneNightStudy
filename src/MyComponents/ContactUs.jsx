@@ -11,7 +11,7 @@ const ContactUs = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_mrvee4c', 'template_pyzbfon', e.target, 'qcc9pBN0jP8x02hRV')
+      .sendForm('EMAILJS_SERVICE_ID', 'EMAILJS_TEMPLATE_ID', e.target, 'EMAILJS_USER_ID')
       .then(() => {
         console.log('Email sent successfully');
         setIsSubmitted(true);
