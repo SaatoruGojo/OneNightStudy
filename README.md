@@ -15,6 +15,10 @@ OneNightStudy is a one-stop solution for students seeking effortless access to a
 
 Visit the website: [OneNightStudy](https://onenightstudy.rf.gd/)
 
+Connect with us on social media:
+- Twitter: [@OneNightStudy](https://twitter.com/OneNightStudy)
+- Instagram: [@onenightstudy_official](https://www.instagram.com/_onenightstudy/)
+
 ## Our Vision
 
 Our vision is to create a centralized hub where students can easily discover, access, and download question papers, notes, study courses, and more. We aim to foster a community of learners who support each other's academic growth.
@@ -45,9 +49,6 @@ To run the project locally, follow these steps:
 
 Help us reach more students by sharing **OneNightStudy** with your friends and classmates. Let's work together to build a thriving academic community!
 
-Connect with us on social media:
-- Twitter: [@OneNightStudy](https://twitter.com/OneNightStudy)
-- Instagram: [@onenightstudy_official](https://www.instagram.com/onenightstudy_official/)
 
 Join us in shaping the future of education! 🌟
 
