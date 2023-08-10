@@ -1,72 +1,58 @@
-# <a href="https://bunk4stud.netlify.app"><img width="110" alt="image" src="https://user-images.githubusercontent.com/88888678/179461906-f69f6623-1984-4f39-9a83-e5729810e98c.png"></a>
+<div align="center">
+  <img src="https://i.imgur.com/nr9howH.png" alt="OneNightStudy Logo" width="55%">
+</div>
 
-# Getting Started with Create React App
+# OneNightStudy - Your Go-To Platform for Academic Resources
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Website](https://img.shields.io/website?label=Visit%20Website&style=for-the-badge&url=https://onenightstudy.rf.gd/)](https://onenightstudy.rf.gd/)
+[![Contributions](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=for-the-badge)](CONTRIBUTING.md)
 
-## Available Scripts
+Welcome to **OneNightStudy**, where academic excellence meets convenience! 📚🚀
 
-In the project directory, you can run:
+## About the Project
 
-### `npm start`
+OneNightStudy is a one-stop solution for students seeking effortless access to a wealth of academic resources. We understand the challenges of finding comprehensive study materials and previous year papers for various colleges and branches. With our user-friendly interface and dedicated team, we are committed to simplifying your academic journey.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Visit the website: [OneNightStudy](https://onenightstudy.rf.gd/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Our Vision
 
-### `npm run build`
+Our vision is to create a centralized hub where students can easily discover, access, and download question papers, notes, study courses, and more. We aim to foster a community of learners who support each other's academic growth.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## How to Contribute
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+We invite you to contribute to the enhancement of **OneNightStudy**! Your valuable contributions can help us improve the platform and make it even more useful for students worldwide. Whether you're a developer, designer, content creator, or simply have ideas to share, we welcome your input.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To contribute, follow these steps:
 
-### `npm run eject`
+1. Fork this repository.
+2. Create a new branch: `git checkout -b feature/your-feature-name`.
+3. Make your changes and commit them: `git commit -m 'Add your changes'`.
+4. Push to your branch: `git push origin feature/your-feature-name`.
+5. Open a pull request and describe your changes.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Check out our [Contribution Guidelines](CONTRIBUTING.md) for detailed information on how to contribute effectively.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To run the project locally, follow these steps:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Clone this repository: `git clone https://github.com/your-username/OneNightStudy.git`.
+2. Navigate to the project directory: `cd OneNightStudy`.
+3. Run the website locally using your preferred method.
 
-## Learn More
+## Spread the Word
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Help us reach more students by sharing **OneNightStudy** with your friends and classmates. Let's work together to build a thriving academic community!
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+Join us in shaping the future of education! 🌟
+Connect with us on social media:
+- Twitter: [@OneNightStudy](https://twitter.com/OneNightStudy)
+- Instagram: [@onenightstudy_official](https://www.instagram.com/_onenightstudy/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Licensed under [MIT License](LICENSE).
