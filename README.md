@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://your-image-url.com" alt="OneNightStudy Logo" width="200">
+  <img src="https://onenightstudy.rf.gd/static/media/Logo1.34af7d8ca6a4d7da09ca.png" alt="OneNightStudy Logo" width="200">
 </div>
 
 # OneNightStudy - Your Go-To Platform for Academic Resources
