@@ -30,11 +30,12 @@ const Home = () => {
                 <strong className="brand-name"> </strong>
               </h1>
 
-              <div className="MDU">
-                Unlock Success in a Single Night with One Night Study! &nbsp;
+              <div className="MDU"> 
                 <h1 className="bunk-heading ">
-                  <strong className="brand-name"> </strong>
+                  <strong className="brand-name"> Unlock Success in a Single Night with One Night Study! &nbsp;</strong>
+                  <h2> Right Place to find the MDU previous year  question Paper</h2>
                 </h1>
+                
                 <div className="branches-name ">
                   <Link to={"/MDU"}>
                     <button className="button-63 short-button" role="button">
